@@ -17,7 +17,7 @@ export default () => (
         <List>
             <ListItem name="Define business requirements (SLA/SLO/SLI)" chronology="1" category="monitoring" level="3" comment="Quantify, example, Availability SLI, Satisfying Latency SLI" />
             <ListItem name="Set app versioning" chronology="2" category="backward compatibility" level="1" comment="Semantic versioning (https://semver.org/)"/>
-            <ListItem name="Define forward compatibility" chronology="2" category="forward compatibility" level="3" comment="App does not break, crash, be unavailable because of server API changes "/>
+            <ListItem name="Define forward compatibility" chronology="2" category="forward compatibility" level="3" comment="Prevent app from crashing, being unavailable because of server API changes "/>
             <ListItem name="Define timeouts/retries/circuit-breakers/fallback for every call" chronology="2" category="availability" level="2"/>
             <ListItem name="Update changelog" chronology="3" category="deployment" level="1"/>
             <ListItem name="Set feature toggling / Gatekeeper" chronology="2" category="security" level="2" comment="Use them according to the relevant distribution platform's rules"/>
