@@ -3,10 +3,12 @@ import Container from "../components/container"
 import Header from "../components/header"
 import List from "../components/list"
 import ListItem from "../components/listItem"
+import Intro from "../components/intro"
 
 export default () => (
     <Container>
         <Header />
+        <Intro />
         <List>
             <ListItem name="Define business requirements (SLA/SLO/SLI)" chronology="1" category="monitoring" level="3" comment="Quantify, example, Availability SLI, Satisfying Latency SLI" />
             <ListItem name="Set app versioning" chronology="2" category="backward compatibility" level="1" comment="Semantic versioning (https://semver.org/)"/>
