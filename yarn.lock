@@ -723,7 +723,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
   integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
@@ -4160,6 +4160,13 @@ gatsby-page-utils@^0.0.7:
     lodash "^4.17.14"
     micromatch "^3.1.10"
     slash "^1.0.0"
+
+gatsby-plugin-google-analytics@^2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.1.10.tgz#50c18afb3aa9b8dc49f5575f0702ce99bbe60ebf"
+  integrity sha512-jVKXKZnwsOEFsvvC5Ik/ZDm/hLv5pp0QJKHiaDCxZWNCG0IkGEAD9XX5TRJWNvQHn/DAXUVfNucS2xes67Utbg==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
 
 gatsby-plugin-page-creator@^2.1.7:
   version "2.1.7"

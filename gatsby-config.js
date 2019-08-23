@@ -6,8 +6,21 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby`,
-    siteUrl: `https://www.gatsbyjs.org`,
-    description: `Blazing fast modern site generator for React`,
+    title: 'AppReliability',
+    author: 'Florian Mari',
+    description: 'SRE Mobile Application checklist',
+    siteUrl: 'https://appreliability.co',
+    social: {
+      twitter: '@florianmari',
+    },
   },
+  pathPrefix: '/',
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-146337913-1",
+      },
+    },
+  ],
 }
