@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Container from "../components/container"
 import Header from "../components/header"
 import List from "../components/list"
@@ -7,6 +8,10 @@ import Intro from "../components/intro"
 
 export default () => (
     <Container>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>AppReliability - Checklist about SRE with Mobile Application</title>
+        </Helmet>
         <Header />
         <Intro />
         <List>
