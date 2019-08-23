@@ -9,7 +9,7 @@ export default ({ children }) => (
                 <th>Category</th>
                 <th>Level</th>
                 {/* <th>Principle</th> */}
-                <th>Comment / Details</th>
+                <th>Comment / Details / Tools</th>
             </tr>
         </thead>
         <tbody>
