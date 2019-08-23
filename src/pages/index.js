@@ -10,7 +10,7 @@ export default () => (
     <Container>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>AppReliability - Checklist about SRE with Mobile Application</title>
+            <title>AppReliability - Checklist about Engineering Reliable Mobile Applications</title>
         </Helmet>
         <Header />
         <Intro />
