@@ -4,14 +4,14 @@ class ListItem extends React.Component {
 
     // Level management
     levelColorLabel(level) {
-        var labelClass = "label"
+        var labelClass = "tag"
     
         if (level == 1) {
-            labelClass += " label-success"
+            labelClass += " is-success"
         } else if (level == 2) {
-            labelClass += " label-warning"
+            labelClass += " is-warning"
         } else if (level == 3) {
-            labelClass += " label-error"
+            labelClass += " is-danger"
         }
         return labelClass
     }
@@ -49,8 +49,8 @@ class ListItem extends React.Component {
         return (
             <tr>
                 <td>{this.props.name}</td>
-                <td><span className="label">{this.chronologyName(this.props.chronology)}</span></td>
-                <td><span className="label">{this.props.category}</span></td>
+                <td><span className="tag">{this.chronologyName(this.props.chronology)}</span></td>
+                <td><span className="tag">{this.props.category}</span></td>
                 <td><span className={this.levelColorLabel(this.props.level)}>{this.levelName(this.props.level)}</span></td>
                 {/* <td>{this.props.principle}</td> */}
                 <td>{this.props.comment}</td>

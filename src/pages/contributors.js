@@ -8,13 +8,20 @@ export default () => (
   <Container>
     <Meta pageTitle="Contributors" />
     <Header />
-    <br />
-    <div class="empty">
-      <p class="empty-title h5">No contributors yet</p>
-      <p class="empty-subtitle">Do you want to contribute to the checklist?</p>
-      <div class="empty-action">
-      <ExternalLink name="Yeah let's go!" link="https://github.com/florianmari/appreliability.co/issues/new/choose" className="btn btn-primary ml1"/>
+    <section class="hero is-danger">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">No contributors yet :(</h1>
+          <h2 class="subtitle">
+            Feel free to contribute by making Pull Request or suggesting things.
+          </h2>
+          <ExternalLink
+              name="Yeah let's go!"
+              link="https://github.com/florianmari/appreliability.co/issues/new/choose"
+              className="button is-warning"
+            />
+        </div>
       </div>
-    </div>
+    </section>
   </Container>
 )

@@ -1,7 +1,7 @@
 import React from "react"
 
 export default ({ children }) => (
-    <table className="table">
+    <table className="table is-striped is-hoverable is-fullwidth">
         <thead>
             <tr>
                 <th>Name</th>
