@@ -46,12 +46,13 @@ export default () => (
               className="button is-light"
             />
             <a
-              class="button is-info"
-              href="https://twitter.com/intent/tweet"
+              class="twitter-share-button button is-info"
+              href="https://twitter.com/intent/tweet?text=Just%20discovered%20this%20website%2C%20a%20control%20checklists%20about%20how%20to%20build%20reliable%20mobile%20applications%20!%20https%3A%2F%2Fappreliability.co"
               data-size="large"
               data-text="Just discovered this website, a control checklists about how to build reliable mobile applications !"
               data-url="https://appreliability.co"
               data-hashtags="mobileengineering"
+              target="_blank"
             >
               Share on twitter
             </a>
