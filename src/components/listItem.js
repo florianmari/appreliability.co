@@ -49,8 +49,8 @@ class ListItem extends React.Component {
         return (
             <tr>
                 <td>{this.props.name}</td>
-                <td><span className="tag">{this.chronologyName(this.props.chronology)}</span></td>
-                <td><span className="tag">{this.props.category}</span></td>
+                <td><span className="tag is-dark">{this.chronologyName(this.props.chronology)}</span></td>
+                <td><span className="tag is-dark">{this.props.category}</span></td>
                 <td><span className={this.levelColorLabel(this.props.level)}>{this.levelName(this.props.level)}</span></td>
                 {/* <td>{this.props.principle}</td> */}
                 <td>{this.props.comment}</td>
