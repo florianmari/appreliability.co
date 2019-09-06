@@ -8,8 +8,7 @@ import Meta from "../components/metadata"
 
 class App extends React.Component {
 
-  state = {
-    items: [
+    items = [
       {name: "Define business requirements (SLA/SLO/SLI)", chronology:1, category:"monitoring", level:3, comment:"Quantify, example, Availability SLI, Satisfying Latency SLI"},
       {name: "Set app versioning", chronology:2, category:"backward compatibility", level:1, comment:"Semantic versioning (https://semver.org/)"},
       {name: "Define forward compatibility", chronology:2, category:"forward compatibility", level:3, comment:"Prevent app from crashing, being unavailable because of server API changes"},
@@ -35,8 +34,7 @@ class App extends React.Component {
       {name: "Be immutable", chronology:2, category:"reliability", level:3},
       {name: "Support i18n", chronology:2, category:"reliability", level:2},
       {name: "Consider risk / criticity", chronology:3, category:"security", level:3}
-    ]
-  }
+    ];
 
   render() {
     return (
@@ -44,7 +42,7 @@ class App extends React.Component {
         <Meta pageTitle="Checklist about Engineering Reliable Mobile Applications"/>
         <Header />
         <Intro />
-        <List items={this.state.items} />
+        <List items={this.items} />
       </Container>
     )
   }
