@@ -8,11 +8,11 @@ export default () => (
   <Container>
     <Meta pageTitle="Contributors" />
     <Header />
-    <section class="hero is-danger">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">No contributors yet :(</h1>
-          <h2 class="subtitle">
+    <section className="hero is-danger">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title">No contributors yet :(</h1>
+          <h2 className="subtitle">
             Feel free to contribute by making Pull Request or suggesting things.
           </h2>
           <ExternalLink

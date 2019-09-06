@@ -32,13 +32,13 @@ class ListItem extends React.Component {
     // Chronology management
     chronologyName = (chronology) => {
         switch (chronology) {
-            case "1":
+            case 1:
                 return "1 - before development"
-            case "2":
+            case 2:
                 return "2 - during development"
-            case "3":
+            case 3:
                 return "3 - before production"
-            case "4":
+            case 4:
                 return "4 - after production"
             default:
                 return "undefined"
