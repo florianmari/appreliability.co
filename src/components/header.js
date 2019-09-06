@@ -20,7 +20,7 @@ export default () => (
       </Link>
     </div>
     <div className="navbar-menu">
-      <div class="navbar-start">
+      <div className="navbar-start">
         <Link to="/" className="navbar-item">
           Home
         </Link>
@@ -32,9 +32,9 @@ export default () => (
         </Link>
       </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
+      <div className="navbar-end">
+        <div className="navbar-item">
+          <div className="buttons">
             <ExternalLink
               name="Twitter"
               link="https://twitter.com/florianmari"
@@ -46,7 +46,7 @@ export default () => (
               className="button is-light"
             />
             <a
-              class="twitter-share-button button is-info"
+              className="twitter-share-button button is-info"
               href="https://twitter.com/intent/tweet?text=Just%20discovered%20this%20website%2C%20a%20control%20checklists%20about%20how%20to%20build%20reliable%20mobile%20applications%20!%20https%3A%2F%2Fappreliability.co"
               data-size="large"
               data-text="Just discovered this website, a control checklists about how to build reliable mobile applications !"
