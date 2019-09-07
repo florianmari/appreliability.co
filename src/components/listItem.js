@@ -6,11 +6,11 @@ class ListItem extends React.Component {
     levelColorLabel(level) {
         var labelClass = "tag"
     
-        if (level == 1) {
+        if (level === 1) {
             labelClass += " is-success"
-        } else if (level == 2) {
+        } else if (level === 2) {
             labelClass += " is-warning"
-        } else if (level == 3) {
+        } else if (level === 3) {
             labelClass += " is-danger"
         }
         return labelClass
@@ -19,11 +19,11 @@ class ListItem extends React.Component {
     levelName = (level) => {
         var labelName = "..."
     
-        if (level == 1) {
+        if (level === 1) {
             labelName = "low"
-        } else if (level == 2) {
+        } else if (level === 2) {
             labelName = "moderate"
-        } else if (level == 3) {
+        } else if (level === 3) {
             labelName = "high"
         }
         return labelName

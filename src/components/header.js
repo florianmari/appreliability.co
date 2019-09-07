@@ -7,16 +7,14 @@ export default () => (
     id="navigationBar"
     className="navbar"
     role="navigation"
-    aria-label="main navigation"
-  >
+    aria-label="main navigation">
     <div className="navbar-brand">
       <Link to="/" className="navbar-item">
         <img
           src={"logo.png"}
           width="112"
           height="28"
-          alt="AppReliability.co logo"
-        />
+          alt="AppReliability.co logo" />
       </Link>
     </div>
     <div className="navbar-menu">
