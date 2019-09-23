@@ -51,7 +51,7 @@ export default () => (
               data-url="https://appreliability.co"
               data-hashtags="mobileengineering"
               target="_blank"
-            >
+              rel="noopener noreferrer" >
               Share on twitter
             </a>
             <ExternalLink

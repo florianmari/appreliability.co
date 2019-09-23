@@ -10,21 +10,25 @@ function Contributor(props) {
     <div className="card" key={props.html_url}>
       <div className="card-image">
         <figure className="image is-4by3">
-          <img src={props.avatar_url} alt="Placeholder image" />
+          <img src={props.avatar_url} alt="Avatar of the contributor" />
         </figure>
       </div>
       <div className="card-content">
         <div className="media">
           <div className="media-content">
             <p className="title is-4">{props.name}</p>
-            <p className="subtitle is-6"><a href={props.url}>@{props.login}</a></p>
+            <p className="subtitle is-6">
+            <ExternalLink
+              name={`@${props.login}`}
+              link={`${props.html_url}`} />
+              </p>
           </div>
         </div>
 
         <div className="content">
           {props.bio}
           <br /><br />
-          <p className="subtitle is-6">Contributions: {props.contributions}</p>
+          Contributions: {props.contributions}
         </div>
       </div>
     </div>
@@ -38,7 +42,7 @@ class Contributors extends React.Component {
     loading: true
   }
 
-  UNSAFE_componentWillMount() {
+  componentDidMount() {
     this.fetchFromGitHub()
   }
 
@@ -70,7 +74,7 @@ class Contributors extends React.Component {
 
   renderLoading() {
     return (
-      <progress className="progress is-large is-info" max="100">60%</progress>
+      <progress className="progress is-large is-info" max="100"></progress>
     )
   }
 
