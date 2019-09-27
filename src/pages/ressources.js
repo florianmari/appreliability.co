@@ -4,27 +4,31 @@ import Header from "../components/header"
 import Meta from "../components/metadata"
 import ExternalLink from "../components/externalLink"
 
-export default () => (
-  <Container>
-    <Meta pageTitle="Ressources" />
-    <Header />
-    <section class="hero is-info">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Ressources</h1>
-          <h2 class="subtitle">
-            Find books, videos, website about SRE Mobile Applications
-          </h2>
-        </div>
-      </div>
-    </section>
-    <section class="section">
+class Ressources extends React.Component {
+  render() {
+    return (
       <Container>
-        <ExternalLink
-          name="Google Engineering Reliable Mobile Applications"
-          link="https://landing.google.com/sre/resources/practicesandprocesses/engineering-reliable-mobile-applications/"
-        />
+        <Meta pageTitle="Ressources" />
+        <Header />
+        <section className="hero is-info" style={{"border-radius": "10px"}}>
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title">Ressources</h1>
+              <h2 className="subtitle"> Find books, videos, website about SRE Mobile Applications </h2>
+            </div>
+          </div>
+        </section>
+        <section className="section">
+          <Container>
+            <ExternalLink
+              name="Google Engineering Reliable Mobile Applications"
+              link="https://landing.google.com/sre/resources/practicesandprocesses/engineering-reliable-mobile-applications/"
+            />
+          </Container>
+        </section>
       </Container>
-    </section>
-  </Container>
-)
+    )
+  }
+}
+
+export default Ressources

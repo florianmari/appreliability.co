@@ -2,7 +2,6 @@ import React from "react"
 import Container from "../components/container"
 import Header from "../components/header"
 import List from "../components/list"
-import ListItem from "../components/listItem"
 import Intro from "../components/intro"
 import Meta from "../components/metadata"
 
