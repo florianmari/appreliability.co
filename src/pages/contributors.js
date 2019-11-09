@@ -16,7 +16,7 @@ function Contributor(props) {
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <p className="title is-4">{props.name}</p>
+            <p className="title is-4">{props.name} hey</p>
             <p className="subtitle is-6">
             <ExternalLink
               name={`@${props.login}`}
