@@ -3,9 +3,7 @@ import ListItem from "./listItem"
 
 class List extends React.Component {
     render() {
-        const listItems = [].concat(this.props.items).sort(function (a, b) { 
-            return a.chronology - b.chronology 
-        }).map((item, index, array) =>
+        const listItems = [].concat(this.props.items).map((item, index, array) =>
             <ListItem
                 name={item.name}
                 chronology={item.chronology}
