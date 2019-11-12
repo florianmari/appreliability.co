@@ -2,8 +2,20 @@ import React from "react"
 import ListItem from "./listItem"
 
 class List extends React.Component {
-    render() {
-        const listItems = [].concat(this.props.items).map((item, index, array) =>
+    
+    constructor(props) {
+        super(props)
+        this.state = {
+            items: [],
+        }
+    }
+
+    renderItems(itemsList) {
+        const sortedItems = [].concat(this.props.items).sort(function (a, b) {
+            return a.chronology - b.chronology
+        })
+
+        const listItems = sortedItems.map((item, index, array) =>
             <ListItem
                 name={item.name}
                 chronology={item.chronology}
@@ -12,7 +24,7 @@ class List extends React.Component {
                 comment={item.comment}
                 key={index}
             />
-        );
+        )
 
         return (
             <table className="table is-striped is-hoverable is-fullwidth">
@@ -30,6 +42,12 @@ class List extends React.Component {
                     {listItems}
                 </tbody>
             </table>
+        )
+    }
+
+    render() {
+        return (
+            this.renderItems(this.props.items)
         )
     }
 }
