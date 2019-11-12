@@ -11,7 +11,7 @@ class List extends React.Component {
     }
 
     renderItems(itemsList) {
-        const sortedItems = itemsList.slice(0).sort(function (a, b) {
+        const sortedItems = [].concat(this.props.items).sort(function (a, b) {
             return a.chronology - b.chronology
         })
 
