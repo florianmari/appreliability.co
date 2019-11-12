@@ -25,8 +25,8 @@ export default () => (
         <Link to="/contributors" className="navbar-item">
           Contributors
         </Link>
-        <Link to="/ressources" className="navbar-item">
-          Ressources
+        <Link to="/resources" className="navbar-item">
+          Resources
         </Link>
       </div>
 
