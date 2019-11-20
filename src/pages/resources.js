@@ -24,6 +24,10 @@ class Ressources extends React.Component {
               name="Google Engineering Reliable Mobile Applications"
               link="https://landing.google.com/sre/resources/practicesandprocesses/engineering-reliable-mobile-applications/"
             />
+            <ExternalLink
+              name="NoBullshit Tech-Lead"
+              link="https://getnobullshit.com/"
+            />
           </Container>
         </section>
       </Container>
