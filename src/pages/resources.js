@@ -20,14 +20,18 @@ class Ressources extends React.Component {
         </section>
         <section className="section">
           <Container>
-            <ExternalLink
+            <ul>
+              <li><ExternalLink
               name="Google Engineering Reliable Mobile Applications"
               link="https://landing.google.com/sre/resources/practicesandprocesses/engineering-reliable-mobile-applications/"
-            />
-            <ExternalLink
+            /></li>
+              <li><ExternalLink
               name="NoBullshit Tech-Lead"
               link="https://getnobullshit.com/"
-            />
+            /></li>
+            </ul>
+            
+            
           </Container>
         </section>
       </Container>
